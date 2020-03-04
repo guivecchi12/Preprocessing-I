@@ -130,24 +130,136 @@ table {
 * {
   box-sizing: border-box;
 }
-header {
-  font-size: 62.5%;
-}
 html,
 body {
   height: 100%;
   padding: 1%;
+  font-size: 62.5%;
 }
-div {
+h1 {
+  font-size: 2.3rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: Black;
+}
+header div {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 2%;
+  font-size: 1.5rem;
+  height: 2vh;
 }
-div nav {
+header div nav {
   display: flex;
   justify-content: space-between;
   width: 30%;
+  margin-right: 1%;
 }
-div nav a {
-  text-decoration: none;
+header div nav a:hover {
+  font-size: 1.7rem;
+  color: brown;
+}
+.section-one {
+  font-weight: bold;
+  background-image: url(https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-size: cover;
+  color: White;
+  height: 40vh;
+}
+.section-one div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-one div button {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 0.5% 1%;
+  width: 10%;
+  height: 15%;
+}
+table {
+  width: 40%;
+  height: 80%;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  text-align: center;
+}
+table tr {
+  border-bottom: 1px solid gray;
+}
+table tr th {
+  padding-top: 10%;
+}
+.section-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.5);
+}
+.section-two div {
+  width: 45%;
+  text-align: justify;
+}
+.section-two div h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.section-two .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.section-three h3 {
+  margin-bottom: 30px;
+}
+.section-three table.work {
+  width: 70%;
+}
+.section-three table.work tr.header {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.section-three table.work th {
+  padding: 10px;
+  border-right: 1px solid gray;
+}
+footer {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e8f8de;
+  padding: 20px 0;
+  margin: 0;
+}
+footer div h3 {
+  padding-bottom: 10px;
+  text-decoration: underline;
 }
