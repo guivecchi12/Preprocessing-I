@@ -61,6 +61,8 @@ table {
 * {
     box-sizing: border-box;
 }
+// phone sizing
+@phone: ~"(max-width:500px)";
 
 html, body {
 	height: 100%;
@@ -92,11 +94,18 @@ header{
 		margin-bottom:2%;
 		font-size: 1.5rem;
 		height:2vh;
+		@media @phone{
+			justify-content: center;
+		}
 		nav{
 			display:flex;
 			justify-content: space-between;
 			width:30%;
 			margin-right:1%;
+			@media @phone{
+				justify-content: space-around;
+				width:100%;
+			}
 		
 			a:hover{
 				font-size: 1.7rem;
@@ -104,6 +113,7 @@ header{
 			}
 		}
 	}
+	
 }
 
 .section-one{
@@ -112,6 +122,7 @@ header{
 	background-size:cover;
 	color: White;
 	height: 40vh;
+	
 	div{
 		height:100%;
 		display:flex;
@@ -124,6 +135,9 @@ header{
 			padding:.5% 1%;
 			width: 10%;
 			height:15%;
+			@media @phone{
+				width:20%;	
+			}
 		}
 	}
 }
@@ -146,13 +160,23 @@ table{
 	justify-content: space-between;
 	padding:30px 0;
 	border-bottom:.5px solid rgba(128, 128, 128, .5);
+	@media @phone{
+		flex-direction: column;		
+	}
 
 	div{
 		width:45%;
 		text-align: justify;
+		@media @phone{
+			width:100%;	
+			padding: 0 2%;	
+		}
 		h3{
 			.center();
 			margin-bottom: 15px;
+			@media @phone{
+				margin-top:15px;	
+			}
 		}
 		
 	}

@@ -159,11 +159,22 @@ header div {
   font-size: 1.5rem;
   height: 2vh;
 }
+@media (max-width:500px) {
+  header div {
+    justify-content: center;
+  }
+}
 header div nav {
   display: flex;
   justify-content: space-between;
   width: 30%;
   margin-right: 1%;
+}
+@media (max-width:500px) {
+  header div nav {
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 header div nav a:hover {
   font-size: 1.7rem;
@@ -190,6 +201,11 @@ header div nav a:hover {
   width: 10%;
   height: 15%;
 }
+@media (max-width:500px) {
+  .section-one div button {
+    width: 20%;
+  }
+}
 table {
   width: 40%;
   height: 80%;
@@ -209,15 +225,31 @@ table tr th {
   padding: 30px 0;
   border-bottom: 0.5px solid rgba(128, 128, 128, 0.5);
 }
+@media (max-width:500px) {
+  .section-two {
+    flex-direction: column;
+  }
+}
 .section-two div {
   width: 45%;
   text-align: justify;
+}
+@media (max-width:500px) {
+  .section-two div {
+    width: 100%;
+    padding: 0 2%;
+  }
 }
 .section-two div h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+}
+@media (max-width:500px) {
+  .section-two div h3 {
+    margin-top: 15px;
+  }
 }
 .section-two .skills {
   display: flex;
